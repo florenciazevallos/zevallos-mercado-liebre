@@ -100,3 +100,17 @@ main {
 input:invalid + .error {
   display: block;
 }
+
+/*tablet*/
+@media (min-width: 520px) {
+  main {
+    width: 75%;
+  }
+}
+
+/*desk*/
+@media (min-width: 1280px) {
+  main {
+    width: 60%;
+  }
+}
