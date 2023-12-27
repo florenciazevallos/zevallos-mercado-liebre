@@ -36,3 +36,20 @@ main {
   padding: 8px;
   margin: 20px 0;
 }
+
+.user-profile {
+  display: flex;
+}
+
+.radio {
+  padding: 10px 50px 10px 0;
+}
+
+.radio label {
+  padding-right: 5px;
+}
+
+.interes {
+  display: flex;
+  flex-direction: column;
+}
