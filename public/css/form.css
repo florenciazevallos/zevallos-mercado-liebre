@@ -53,3 +53,33 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.check {
+  padding: 10px 50px 10px 0;
+}
+
+.check label {
+  padding-right: 5px;
+}
+
+.imagen {
+  background-color: #fff;
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 20px 0;
+}
+
+.clave {
+  display: flex;
+  flex-direction: column;
+}
+
+.clave input {
+  border: none;
+  height: 35px;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 20px 0;
+}
