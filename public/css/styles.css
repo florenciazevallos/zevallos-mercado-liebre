@@ -289,15 +289,15 @@ footer {
   .detalle {
     display: none;
   }
-  .articulos:hover {
+  .articulo:hover {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
   .articulo:hover {
-    .detail {
+    .detalle {
       display: block;
     }
   }
-  .delivery {
+  .delivery:hover {
     transform: rotate(-90deg);
   }
 

@@ -73,5 +73,121 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <form action="/" class="register">
+        <h3>Datos de usuario</h3>
+        <div class="datosUsuario">
+          <input
+            type="text"
+            name="username"
+            placeholder="Nombre y apellido"
+            minlength="2"
+          />
+          <span class="error">Por favor, ingresa un dato válido.</span>
+          <input
+            type="text"
+            name="nickname"
+            placeholder="Nombre de usuario"
+            minlength="4"
+          />
+          <span class="error"
+            >El nombre de usuario debe tener al menos 4 caracteres.</span
+          >
+          <input type="email" name="email" placeholder="Correo electrónico" />
+          <span class="error"
+            >Por favor, ingresa un correo electrónico válido.</span
+          >
+          <input type="text" name="address" placeholder="Domicilio" />
+        </div>
+        <h3>Fecha de nacimiento</h3>
+        <div>
+          <input type="date" name="fecha" class="date" />
+        </div>
+        <h3>Perfil de usuario</h3>
+        <div class="perfilUsuario">
+          <div class="radio">
+            <label for="buyer">Comprador</label>
+            <input
+              type="radio"
+              name="user-profile"
+              value="comprador"
+              id="buyer"
+            />
+          </div>
+          <div class="radio">
+            <label for="seller">Vendedor</label>
+            <input
+              type="radio"
+              name="user-profile"
+              id="seller"
+              value="vendedor"
+            />
+          </div>
+        </div>
+        <h3>Intereses</h3>
+        <div class="interes">
+          <div class="check">
+            <label for="electro">Electro</label>
+            <input
+              type="checkbox"
+              name="interests"
+              id="electro"
+              value="electro"
+            />
+          </div>
+          <div class="check">
+            <label for="fashion">Moda</label>
+            <input type="checkbox" name="interests" id="fashion" value="moda" />
+          </div>
+          <div class="check">
+            <label for="home">Hogar</label>
+            <input type="checkbox" name="interests" id="home" value="hogar" />
+          </div>
+          <div class="check">
+            <label for="toy-store">Juguetería</label>
+            <input
+              type="checkbox"
+              name="interests"
+              id="toy-store"
+              value="juguetería"
+            />
+          </div>
+          <div class="check">
+            <label for="health-life">Vida sana</label>
+            <input
+              type="checkbox"
+              name="interests"
+              id="health-life"
+              value="vida-sana"
+            />
+          </div>
+        </div>
+        <h3>Imagen de usuario</h3>
+        <div>
+          <input type="file" name="avatar" class="imagen" />
+        </div>
+        <h3>Contraseña</h3>
+        <div class="clave">
+          <input
+            type="password"
+            name="key"
+            placeholder="Contraseña"
+            minlength="8"
+          />
+          <span class="error"
+            >La contraseña debe tener al menos 8 caracteres.</span
+          >
+          <input
+            type="password"
+            name="confirm-key"
+            placeholder="Confimar Contraseña"
+            pattern=".{8,}"
+          />
+          <span class="error">Las contraseñas no coinciden</span>
+        </div>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar datos</button>
+      </form>
+    </main>
   </body>
 </html>
